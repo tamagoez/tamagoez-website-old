@@ -21,12 +21,12 @@ export default function Portfolio() {
         tamagoez(Pronounce as tamago)
       </span>
       <br />
-      Nice to meet you, I'm tamagoez.
+      Nice to meet you, I&apos;m tamagoez.
       <br />
-      I'm a creator of application, illust, movies, and etc. Also, I post blog
+      I&apos;m a creator of application, illust, movies, and etc. Also, I post blog
       sometime.
       <br />
-      I'm amateur creator. So, I'm not good at these.
+      I&apos;m amateur creator. So, I&apos;m not good at these.
       <br />
       This website is for save and share my portfolio.
       <br />I hope you enjoy this!
