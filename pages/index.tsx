@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       
       <div>
-        <div className="hero min-h-screen" style={background-image: url(https://placeimg.com/1000/800/arch)}>
+        <div className="hero min-h-screen" style={{background-image: url(https://placeimg.com/1000/800/arch)}}>
           <div className="hero-overlay bg-opacity-60" />
           <div className="hero-content text-center text-neutral-content">
             <div className="max-w-md">
