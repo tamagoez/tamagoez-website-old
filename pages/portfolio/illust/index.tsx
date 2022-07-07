@@ -13,6 +13,7 @@ export default function illust() {
       <div className="flex flex-wrap justify-center gap-4">
         {illustlist.map((x) => (
           <Portfoliocard
+            key={x.url}
             type="illust"
             url={x.url}
             title={x.title}
