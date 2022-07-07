@@ -1,15 +1,20 @@
 import "../styles/globals.css";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  console.log(router.pathname);
+  let usebar;
+  usebar = router.pathname !== "/portfolio/illust/[url]";
   return (
     <>
-      <Navbar />
-      <div className="pt-[64px] min-h-screen">
+      {usebar ? <Navbar /> : null}
+      <div className={usebar ? "pt-[64px] min-h-screen" : null}>
         <Component {...pageProps} />
       </div>
-      <Footer />
+      {usebar ? <Footer /> : null}
     </>
   );
 }
