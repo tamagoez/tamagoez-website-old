@@ -16,8 +16,8 @@ export default function Navbar() {
             <Image
                         src="/illust/zeogamat8.png"
                               alt="tamagoez"
-                              width={50}
-                        height={50}
+                              width={30}
+                        height={30}
                       />
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link href="/about-etc" passHref>
-                <a>About / Etc</a>
+                <a><IoPerson />About / Etc</a>
               </Link>
             </li>
           </ul>
