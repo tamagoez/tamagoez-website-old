@@ -18,10 +18,11 @@ export default function Illust() {
   return (
     <>
       <div className="bg-base-200 min-h-screen">
+        <div className="pt-2" />
         <p className="text-gray-900">
           <Title title={data.title} />
         </p>
-        <p className="pt-2 text-md flex justify-center text-gray-700">
+        <p className="pt-2 text-md flex justify-center text-gray-700 max-w-5/4">
           {data.description}
         </p>
         <button

@@ -7,7 +7,7 @@ export default function illust() {
     <>
       <Title title="Illust" />
       <p className="text-md flex justify-center">
-        下手なイラストを公開しています
+        下手なイラストを公開しています<br />Sharing my noob illust
       </p>
       <div className="divider">2022年7月</div>
       <div className="flex flex-wrap justify-center gap-4">
