@@ -3,7 +3,7 @@ import Image from "next/image"
 import { RiFileCopy2Line } from "react-icons/ri"
 import { TbNotebook } from "react-icons/tb"
 import { IoPerson } from "react-icons/io5"
-import { BiMovie, BiImage } from "react-icons/bi"
+import { BiMovie, BiImages } from "react-icons/bi"
 import { AiOutlineAppstore } from "react-icons/ai"
 
 export default function Navbar() {
