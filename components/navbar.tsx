@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Image from "next/image"
-import { RiFileCopy2Line } from "react-icons/ri"
-import { TbNotebook } from "react-icons/tb"
-import { IoPerson } from "react-icons/io5"
-import { BiMovie, BiImages } from "react-icons/bi"
-import { AiOutlineAppstore } from "react-icons/ai"
+import Image from "next/image";
+import { RiFileCopy2Line } from "react-icons/ri";
+import { TbNotebook } from "react-icons/tb";
+import { IoPerson } from "react-icons/io5";
+import { BiMovie, BiImages } from "react-icons/bi";
+import { AiOutlineAppstore } from "react-icons/ai";
 
 export default function Navbar() {
   return (
@@ -13,29 +13,28 @@ export default function Navbar() {
         <div className="flex-1">
           <Link href="/" passHref>
             <a className="btn btn-ghost normal-case text-xl font-semibold">
-              {/*
-            <div className="avatar">
-                <div className="w-24 rounded-full">
-            <Image
-                        src="/illust/zeogamat8.png"
-                              alt="tamagoez"
-                              width={30}
-                        height={30}
+              <div className="avatar">
+                <div className="rounded-full">
+                  <Image
+                    src="/illust/zeogamat8.png"
+                    alt="tamagoez"
+                    width={30}
+                    height={30}
                   />
-                  
                 </div>
               </div>
-  */}
+              <div className="px-1" />
               tamagoez
             </a>
           </Link>
         </div>
-        <div className="flex-none">
+        <div className="flex-none hidden sm:block">
           <ul className="menu menu-horizontal p-0">
             <li tabIndex={0}>
               <Link href="/portfolio" passHref>
                 <a>
-                  <RiFileCopy2Line />Portfolio
+                  <RiFileCopy2Line />
+                  Portfolio
                   <svg
                     className="fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,29 +49,69 @@ export default function Navbar() {
               <ul className="p-2 bg-base-100">
                 <li>
                   <Link href="/portfolio/apps" passHref>
-                    <a><AiOutlineAppstore />Application</a>
+                    <a>
+                      <AiOutlineAppstore />
+                      Application
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/portfolio/illust" passHref>
-                    <a><BiImages />Illust</a>
+                    <a>
+                      <BiImages />
+                      Illust
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/portfolio/videos" passHref>
-                    <a><BiMovie />Videos</a>
+                    <a>
+                      <BiMovie />
+                      Videos
+                    </a>
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
               <Link href="/blog" passHref>
-                <a><TbNotebook />Blog</a>
+                <a>
+                  <TbNotebook />
+                  Blog
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/about-etc" passHref>
-                <a><IoPerson />About / Etc</a>
+                <a>
+                  <IoPerson />
+                  About / Etc
+                </a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="flex-none block sm:hidden">
+          <ul className="menu menu-horizontal p-0">
+            <li>
+              <Link href="/portfolio" passHref>
+                <a>
+                  <RiFileCopy2Line />
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" passHref>
+                <a>
+                  <TbNotebook />
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about-etc" passHref>
+                <a>
+                  <IoPerson />
+                </a>
               </Link>
             </li>
           </ul>

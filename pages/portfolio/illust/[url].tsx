@@ -3,6 +3,8 @@ import Image from "next/image";
 import illustlist from "../../../files/illustlist.json";
 import Title from "../../../components/title";
 import { IoClose } from "react-icons/io5";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
 export default function Illust() {
   const router = useRouter();
   const { url: url } = router.query;
@@ -14,15 +16,25 @@ export default function Illust() {
     return list.url === url;
   }
   const data = illustlist.find(isUrl);
+
+  const nowlink = illustlist.indexOf(data);
+  console.log(`nowlink: ${nowlink}`);
+  const nextlink = nowlink === 0 ? null : illustlist[nowlink - 1]["url"];
+  const prevlink =
+    nowlink === illustlist.length - 1 ? null : illustlist[nowlink + 1]["url"];
   console.log(data);
+
+  console.log(`prev: ${prevlink}`);
+  console.log(`next: ${nextlink}`);
   return (
     <>
-      <div className="bg-base-200 min-h-screen">
+      <div className="bg-base-200/20 min-h-screen">
         <div className="pt-2" />
         <p className="text-gray-900">
           <Title title={data.title} />
         </p>
-        <p className="pt-2 text-md flex justify-center text-gray-700 max-w-5/4">
+        {/*<div className="pt-2" />*/}
+        <p className="text-md flex justify-center text-gray-700 max-w-5/4">
           {data.description}
         </p>
         <button
@@ -30,6 +42,20 @@ export default function Illust() {
           onClick={() => router.push("/portfolio/illust/")}
         >
           <IoClose />
+        </button>
+        <button
+          className="btn-square fixed h-full inset-y-0 left-0 text-gray-400/[.30] hover:text-gray-600/[.70] text-5xl z-40"
+          disabled={prevlink === null}
+          onClick={() => router.push(prevlink)}
+        >
+          <IoIosArrowBack />
+        </button>
+        <button
+          className="btn-square fixed h-full inset-y-0 right-0 text-gray-400/[.30] hover:text-gray-600/[.70] text-5xl z-40"
+          disabled={nextlink === null}
+          onClick={() => router.push(nextlink)}
+        >
+          <IoIosArrowForward />
         </button>
         <div className="pb-5" />
         <div className="aspect-auto flex justify-center">

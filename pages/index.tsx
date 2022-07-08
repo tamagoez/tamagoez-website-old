@@ -26,20 +26,43 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="divider" />
-
-      <div>
-        <Link href="/portfolio" passHref>
-        <div className="card w-96 bg-base-100 shadow-xl">
-  <div className="card-body">
-    <h2 className="card-title">Portfolio</h2>
-    <p>Application, Illust, Videos</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Go</button>
-    </div>
+      <div className="divider">Menu</div>
+      <div className="min-h-[82vh]">
+        <div className="flex flex-wrap gap-4 px-3 justify-center">
+          <Link href="/portfolio" passHref>
+            <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.99]">
+              <div className="card-body">
+                <h2 className="card-title">Portfolio</h2>
+                <p>Application, Illust, Videos</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Go</button>
+                </div>
+              </div>
             </div>
+          </Link>
+          <Link href="/blog" passHref>
+            <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.99]">
+              <div className="card-body">
+                <h2 className="card-title">Blog</h2>
+                <p>Look inside of tamagoez</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Go</button>
+                </div>
+              </div>
             </div>
-            </Link>
+          </Link>
+          <Link href="/about-etc" passHref>
+            <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.99]">
+              <div className="card-body">
+                <h2 className="card-title">About / Etc</h2>
+                <p>Introducing tamagoez</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Go</button>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </>
   );
