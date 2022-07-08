@@ -2,7 +2,9 @@ import Link from "next/link";
 import Image from "next/image"
 import { RiFileCopy2Line } from "react-icons/ri"
 import { TbNotebook } from "react-icons/tb"
-import {IoPerson} from "react-icons/io5"
+import { IoPerson } from "react-icons/io5"
+import { BiMovie, BiImage } from "react-icons/bi"
+import { AiOutlineAppstore } from "react-icons/ai"
 
 export default function Navbar() {
   return (
@@ -45,17 +47,17 @@ export default function Navbar() {
               <ul className="p-2 bg-base-100">
                 <li>
                   <Link href="/portfolio/apps" passHref>
-                    <a>Application</a>
+                    <a><AiOutlineAppstore />Application</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/portfolio/illust" passHref>
-                    <a>Illust</a>
+                    <a><BiImages />Illust</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/portfolio/videos" passHref>
-                    <a>Videos</a>
+                    <a><BiMovie />Videos</a>
                   </Link>
                 </li>
               </ul>
