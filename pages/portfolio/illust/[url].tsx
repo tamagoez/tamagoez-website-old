@@ -17,19 +17,19 @@ export default function Illust() {
   console.log(data);
   return (
     <>
-      <div className="bg-gray-900 min-h-screen">
-        <span className="text-gray-200">
+      <div className="bg-base-200 min-h-screen">
+        <span className="text-gray-900">
           <Title title={data.title} />
         </span>
-        <span className="pt-2 text-md flex justify-center text-gray-300">
+        <button className="pt-2 text-md flex justify-center text-gray-700">
           {data.description}
-        </span>
-        <div
-          className="fixed top-5 right-6 text-gray-300 text-5xl z-50"
+        </button>
+        <button
+          className="btn btn-ghost fixed top-1 right-1 sm:top-5 sm:right-5 text-gray-600/[.60] text-5xl z-50"
           onClick={() => router.push("/portfolio/illust/")}
         >
           <IoClose />
-        </div>
+        </button>
         <div className="pb-5" />
         <div className="aspect-auto flex justify-center">
           <Image

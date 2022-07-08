@@ -11,7 +11,7 @@ export default function Portfoliocard({
   return (
     <>
       <Link href={`${type}/${url}`}>
-        <div className="card card-compact max-w-xs bg-base-100 shadow-md hover:brightness-[.99] hover:shadow-lg">
+        <div className="card card-compact max-w-xs bg-base-100 shadow-md hover:brightness-[.99] hover:shadow-xs">
           <figure>
             <Image
               src={`/${type}/${url}`}

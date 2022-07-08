@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "quick": "npm install & npm run build & npm start"
   },
   "dependencies": {
     "@types/node": "^17.0.45",
