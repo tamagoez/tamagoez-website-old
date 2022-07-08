@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image"
 import { RiFileCopy2Line } from "react-icons/ri"
 import { TbNotebook } from "react-icons/tb"
-import {IoPerson} from "react-icons/io"
+import {IoPerson} from "react-icons/io5"
 
 export default function Navbar() {
   return (
