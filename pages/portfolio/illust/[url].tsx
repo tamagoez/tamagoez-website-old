@@ -26,7 +26,7 @@ export default function Illust() {
           {data.description}
         </p>
         <button
-          className="btn btn-ghost fixed top-1 right-1 sm:top-5 sm:right-5 text-gray-600/[.60] text-5xl z-50"
+          className="btn btn-ghost fixed top-1 right-1 sm:top-5 sm:right-3 text-gray-400/[.30] hover:text-gray-600/[.70] text-5xl z-50"
           onClick={() => router.push("/portfolio/illust/")}
         >
           <IoClose />

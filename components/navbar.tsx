@@ -9,20 +9,23 @@ import { AiOutlineAppstore } from "react-icons/ai"
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-300/[.98] fixed top-0 z-50 rounded-b-lg">
+      <div className="navbar bg-base-200/[.95] fixed top-0 z-50 rounded-b-lg">
         <div className="flex-1">
           <Link href="/" passHref>
             <a className="btn btn-ghost normal-case text-xl font-semibold">
+              {/*
             <div className="avatar">
-            <div className="w-24 rounded-full">
+                <div className="w-24 rounded-full">
             <Image
                         src="/illust/zeogamat8.png"
                               alt="tamagoez"
                               width={30}
                         height={30}
-                      />
+                  />
+                  
                 </div>
               </div>
+  */}
               tamagoez
             </a>
           </Link>
