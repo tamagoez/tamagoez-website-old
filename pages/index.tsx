@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,6 +24,22 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="divider" />
+
+      <div>
+        <Link href="/portfolio" passHref>
+        <div className="card w-96 bg-base-100 shadow-xl">
+  <div className="card-body">
+    <h2 className="card-title">Portfolio</h2>
+    <p>Application, Illust, Videos</p>
+    <div className="card-actions justify-end">
+      <button className="btn btn-primary">Go</button>
+    </div>
+            </div>
+            </div>
+            </Link>
       </div>
     </>
   );

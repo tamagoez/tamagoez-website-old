@@ -1,4 +1,8 @@
 import Link from "next/link";
+import Image from "next/image"
+import { RiFileCopy2Line } from "react-icons/ri"
+import { TbNotebook } from "react-icons/tb"
+import {IoPerson} from "react-icons/io"
 
 export default function Navbar() {
   return (
@@ -7,6 +11,16 @@ export default function Navbar() {
         <div className="flex-1">
           <Link href="/" passHref>
             <a className="btn btn-ghost normal-case text-xl font-semibold">
+            <div className="avatar">
+            <div className="w-24 rounded-full">
+            <Image
+                        src="/illust/zeogamat8.png"
+                              alt="tamagoez"
+                              width={50}
+                        height={50}
+                      />
+                </div>
+              </div>
               tamagoez
             </a>
           </Link>
@@ -16,7 +30,7 @@ export default function Navbar() {
             <li tabIndex={0}>
               <Link href="/portfolio" passHref>
                 <a>
-                  Portfolio
+                  <RiFileCopy2Line />Portfolio
                   <svg
                     className="fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +62,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link href="/blog" passHref>
-                <a>Blog</a>
+                <a><TbNotebook />Blog</a>
               </Link>
             </li>
             <li>
