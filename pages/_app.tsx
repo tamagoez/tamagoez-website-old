@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   console.log(router.pathname);
   let usebar;
-  usebar = router.pathname !== "/portfolio/illust/[url]";
+  usebar = router.pathname !== "/portfolio/images/[url]";
   return (
     <>
       {usebar ? <Navbar /> : null}

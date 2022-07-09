@@ -27,15 +27,15 @@ export default function Portfolio() {
 
         <div
           className="card w-96 bg-base-100 shadow-xl shadow-lg hover:shadow-md hover:brightness-[.99]"
-          onClick={() => router.push("/portfolio/illust")}
+          onClick={() => router.push("/portfolio/images")}
         >
           <div className="card-body">
-            <h2 className="card-title">Illust</h2>
-            <p>下手なイラストを公開しています</p>
+            <h2 className="card-title">Images / Illust</h2>
+            <p>画像や下手なイラストを公開しています</p>
             <div className="card-actions justify-end">
               <button
                 className="btn btn-primary"
-                onClick={() => router.push("/portfolio/illust")}
+                onClick={() => router.push("/portfolio/images")}
               >
                 Go
               </button>

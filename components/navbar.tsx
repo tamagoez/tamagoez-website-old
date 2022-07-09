@@ -56,10 +56,10 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/portfolio/illust" passHref>
+                  <Link href="/portfolio/images" passHref>
                     <a>
                       <BiImages />
-                      Illust
+                      Images / Illust
                     </a>
                   </Link>
                 </li>
