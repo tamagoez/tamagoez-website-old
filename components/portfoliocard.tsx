@@ -14,7 +14,7 @@ export default function Portfoliocard({
   return (
     <>
       <Link href={`${type}/${url}`} passHref>
-        <div className="card card-compact max-w-xs bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.99]">
+        <div className="card card-compact max-w-xs bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.98]">
           <figure className="cursor-zoom-in">
             <Image
               src={`/${type}/${url}`}

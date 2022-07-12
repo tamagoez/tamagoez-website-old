@@ -28,13 +28,13 @@ export default function Illust() {
   const prevlink = nowlink === 0 ? null : sortlist[nowlink - 1]["url"];
   const prevcn =
     prevlink !== null
-      ? " hover:text-gray-600/[.70] hover:bg-gray-500/30 hover:animate-pulse"
+      ? " hover:text-gray-600/[.70] hover:bg-gray-500/40 hover:animate-pulse"
       : "";
   const nextlink =
     nowlink === sortlist.length - 1 ? null : sortlist[nowlink + 1]["url"];
   const nextcn =
     nextlink !== null
-      ? " hover:text-gray-600/[.70] hover:bg-gray-500/30 hover:animate-pulse"
+      ? " hover:text-gray-600/[.70] hover:bg-gray-500/40 hover:animate-pulse"
       : "";
 
   console.log(data);
@@ -90,7 +90,7 @@ export default function Illust() {
           {data.description}
         </p>
         <button
-          className="btn btn-ghost btn-square fixed top-3 right-3 sm:top-5 sm:right-5 text-gray-400/[.30] hover:text-gray-600/[.70] text-5xl z-50"
+          className="btn btn-ghost btn-square fixed top-3 right-3 sm:top-5 sm:right-5 text-gray-400/[.30] hover:text-gray-600/[.70] text-6xl z-50"
           onClick={() => router.push("/portfolio/images/")}
         >
           <IoClose />

@@ -30,7 +30,7 @@ export default function Home() {
       <div className="min-h-[82vh]">
         <div className="flex flex-wrap gap-4 px-3 justify-center">
           <Link href="/portfolio" passHref>
-            <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.99]">
+            <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.98]">
               <div className="card-body">
                 <h2 className="card-title">Portfolio</h2>
                 <p>Application, Illust, Videos</p>
@@ -41,7 +41,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/blog" passHref>
-            <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.99]">
+            <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.98]">
               <div className="card-body">
                 <h2 className="card-title">Blog</h2>
                 <p>Look inside of tamagoez</p>
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/about-etc" passHref>
-            <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.99]">
+            <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.98]">
               <div className="card-body">
                 <h2 className="card-title">About / Etc</h2>
                 <p>Introducing tamagoez</p>

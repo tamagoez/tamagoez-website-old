@@ -8,7 +8,7 @@ export default function Portfolio() {
       <Title title="Portfolio" />
       <div className="flex flex-wrap gap-4 px-3 justify-center">
         <div
-          className="card w-96 bg-base-100 shadow-xl shadow-lg hover:shadow-md hover:brightness-[.99]"
+          className="card w-96 bg-base-100 shadow-xl shadow-lg hover:shadow-md hover:brightness-[.98]"
           onClick={() => router.push("/portfolio/apps")}
         >
           <div className="card-body">
@@ -26,7 +26,7 @@ export default function Portfolio() {
         </div>
 
         <div
-          className="card w-96 bg-base-100 shadow-xl shadow-lg hover:shadow-md hover:brightness-[.99]"
+          className="card w-96 bg-base-100 shadow-xl shadow-lg hover:shadow-md hover:brightness-[.98]"
           onClick={() => router.push("/portfolio/images")}
         >
           <div className="card-body">
@@ -44,7 +44,7 @@ export default function Portfolio() {
         </div>
 
         <div
-          className="card w-96 bg-base-100 shadow-xl shadow-lg hover:shadow-md hover:brightness-[.99]"
+          className="card w-96 bg-base-100 shadow-xl shadow-lg hover:shadow-md hover:brightness-[.98]"
           onClick={() => router.push("/portfolio/videos")}
         >
           <div className="card-body">
