@@ -26,10 +26,16 @@ export default function Illust() {
   const nowlink = sortlist.indexOf(data);
   console.log(`nowlink: ${nowlink}`);
   const prevlink = nowlink === 0 ? null : sortlist[nowlink - 1]["url"];
-  const prevcn = prevlink !== null ? " hover:text-gray-600/[.70]" : "";
+  const prevcn =
+    prevlink !== null
+      ? " hover:text-gray-600/[.70] hover:bg-gray-500/30 hover:animate-pulse"
+      : "";
   const nextlink =
     nowlink === sortlist.length - 1 ? null : sortlist[nowlink + 1]["url"];
-  const nextcn = nextlink !== null ? " hover:text-gray-600/[.70]" : "";
+  const nextcn =
+    nextlink !== null
+      ? " hover:text-gray-600/[.70] hover:bg-gray-500/30 hover:animate-pulse"
+      : "";
 
   console.log(data);
 
@@ -55,6 +61,16 @@ export default function Illust() {
         <p className="text-gray-900">
           <Title title={data.title} />
         </p>
+        <div className="flex gap-1 justify-center">
+          {data.rough ? (
+            <div className="badge badge-secondary badge-outline badge-md">
+              rough
+            </div>
+          ) : null}
+          {data.tag.map((x) => (
+            <div className="badge badge-outline badge-md">{x}</div>
+          ))}
+        </div>
         <span className="text-sm text-gray-500 flex justify-center">
           {data.date}
         </span>
@@ -70,7 +86,7 @@ export default function Illust() {
         </button>
         <button
           className={
-            "btn btn-ghost btn-square fixed h-full inset-y-0 left-0 text-gray-400/[.30] text-5xl z-40" +
+            "fixed h-full inset-y-0 left-0 text-gray-400/[.30] text-5xl z-40" +
             prevcn
           }
           disabled={prevlink === null}
@@ -80,7 +96,7 @@ export default function Illust() {
         </button>
         <button
           className={
-            "btn btn-ghost btn-square fixed h-full inset-y-0 right-0 text-gray-400/[.30] text-5xl z-40" +
+            "fixed h-full inset-y-0 right-0 text-gray-400/[.30] text-5xl z-40" +
             nextcn
           }
           disabled={nextlink === null}

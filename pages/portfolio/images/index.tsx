@@ -27,6 +27,8 @@ export default function illust() {
             width={x.width}
             height={x.height}
             date={x.date}
+            rough={x.rough}
+            tag={x.tag}
           />
         ))}
       </div>

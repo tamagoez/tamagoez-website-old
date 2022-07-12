@@ -7,7 +7,9 @@ export default function Portfoliocard({
   description,
   width,
   height,
-  date
+  date,
+  rough,
+  tag
 }) {
   return (
     <>
@@ -22,8 +24,18 @@ export default function Portfoliocard({
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{title}</h2>
+            <span className="card-title">{title}</span>
             <span className="text-xs text-gray-500">{date}</span>
+            <div className="flex gap-1">
+              {rough ? (
+                <div className="badge badge-secondary badge-outline badge-sm">
+                  rough
+                </div>
+              ) : null}
+              {tag.map((x) => (
+                <div className="badge badge-outline badge-sm">{x}</div>
+              ))}
+            </div>
             <p>{description}</p>
             <div className="card-actions justify-end"></div>
           </div>

@@ -5,7 +5,9 @@
     "description": "生まれて初めて描いたイラスト。自分をモチーフにして美化した。",
     "date": "2022/07/03",
     "width": 400,
-    "height": 400
+    "height": 400,
+    "rough": true,
+    "tag": ["digital", "icon"]
   },
   {
     "url": "zeogamat8.png",
@@ -13,7 +15,9 @@
     "description": "8番目のアイコンです。ほかのアイコンに比べてグラデーションが濃くなっています。",
     "date": "2022/07/07",
     "width": 400,
-    "height": 400
+    "height": 400,
+    "rough": false,
+    "tag": ["digital", "icon"]
   },
   {
     "url": "hopeanddespair.png",
@@ -21,6 +25,18 @@
     "description": "右手は期待、左手は絶望を表しています。窓の向こうに欲求があり、届きそうなのに届かない心境を絵にしました。この時、泣いちゃうぐらい病んでて、部活中に頭にふとよぎった画像を描きました。",
     "date": "2022/07/06",
     "width": 1920,
-    "height": 1080
+    "height": 1080,
+    "rough": true,
+    "tag": ["digital", "utu"]
+  },
+  {
+    "url": "heartvibration.png",
+    "title": "心の振動",
+    "description": "今日は僕の誕生日。なんか鬱だったけど、違うことで頭パンパンでした。あぁ^～心がぴょんぴょんするんじゃぁ^～",
+    "date": "2022/07/11",
+    "width": 2314,
+    "height": 1536,
+    "rough": true,
+    "tag": ["analog", "heart"]
   }
 ]
