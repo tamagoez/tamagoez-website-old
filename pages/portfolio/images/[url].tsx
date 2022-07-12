@@ -66,7 +66,7 @@ export default function Illust() {
     return null;
   });
 
-  const url = "https://tamagoez.vercel.app"
+  const baseurl = "https://tamagoez.vercel.app"
   return (
     <>
     <Head>
@@ -74,15 +74,15 @@ export default function Illust() {
       <meta property="og:type" content="article" />
       <meta property="og:title" content={data.title + " - tamagoez"} />
       <meta property="og:description" content={data.description} />
-      <meta property="og:url" content={`${url}/portfolio/images/${data.url}`} />
+      <meta property="og:url" content={`${baseurl}/portfolio/images/${data.url}`} />
       <meta property="og:site_name" content="tamagoez Website" />
-      <meta property="og:image" content={`${url}/images/${data.url}`} />
+      <meta property="og:image" content={`${baseurl}/images/${data.url}`} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@_tamagoez_" />
       <meta name="twitter:creator" content="@_tamagoez_" />
       <meta name="twitter:title" content={data.title + " - tamagoez"} />
       <meta name="twitter:description" content={data.description} />
-      <meta name="twitter:image" content={`${url}/images/${data.url}`} />
+      <meta name="twitter:image" content={`${baseurl}/images/${data.url}`} />
     </Head>
       <div className="bg-base-200/20 min-h-screen">
         <div className="pt-2" />
