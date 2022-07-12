@@ -76,11 +76,11 @@ export default function Illust() {
               rough
             </div>
           ) : null}
-          {data.tag.map((x) => { 
+          {data.tag.map((x) => {return ( 
                 <div className="badge badge-outline badge-sm" key={x}>
                   {x}
                 </div>
-          })}
+              )})}
         </div>
         <span className="text-sm text-gray-500 flex justify-center">
           {data.date}
