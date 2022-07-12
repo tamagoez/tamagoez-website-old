@@ -25,7 +25,7 @@ export default function Portfoliocard({
               placeholder="blur"
             />
           </figure>
-          <div className="card-body">
+          <div className="card-body cursor-pointer">
             <span className="card-title">{title}</span>
             <span className="text-xs text-gray-500">{date}</span>
             <div className="flex gap-1">

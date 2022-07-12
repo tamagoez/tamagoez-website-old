@@ -42,24 +42,22 @@ export default function Illust() {
   console.log(`prev: ${prevlink}`);
   console.log(`next: ${nextlink}`);
 
-  let keydown = false
-
   document.body.addEventListener("keydown", (event) => {
     if (event.key === "ArrowRight") {
       console.log("pressed: ArrowRight");
-      if (!keydown) router.push(nextlink);
-      keydown = true
+      if (!sessionStorage.removeItem('keydown')) router.push(nextlink);
+      sessionStorage.setItem('keydown', 'true');
     }
     if (event.key === "ArrowLeft") {
       console.log("pressed: ArrowLeft");
-      if (!keydown) router.push(prevlink);
-      keydown = true
+      if (!sessionStorage.removeItem('keydown')) router.push(prevlink);
+      sessionStorage.setItem('keydown', 'true');
     }
     return null;
   });
 
   document.body.addEventListener("keyup", (event) => {
-    keydown = false
+    sessionStorage.setItem('keydown', 'false');
     return null;
   });
 
