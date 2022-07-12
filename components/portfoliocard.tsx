@@ -14,7 +14,7 @@ export default function Portfoliocard({
   return (
     <>
       <Link href={`${type}/${url}`} passHref>
-        <div className="card card-compact max-w-xs bg-base-100 shadow-lg hover:shadow-md">
+        <div className="card card-compact max-w-xs bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.99]">
           <figure className="cursor-zoom-in">
             <Image
               src={`/${type}/${url}`}
@@ -25,7 +25,7 @@ export default function Portfoliocard({
               placeholder="blur"
             />
           </figure>
-          <div className="card-body hover:brightness-[.99]">
+          <div className="card-body">
             <span className="card-title">{title}</span>
             <span className="text-xs text-gray-500">{date}</span>
             <div className="flex gap-1">
@@ -40,8 +40,8 @@ export default function Portfoliocard({
                 </div>
               )
           })}
-          <p>{description}</p>
             </div>
+            <p>{description}</p>
             <div className="card-actions justify-end"></div>
           </div>
         </div>
