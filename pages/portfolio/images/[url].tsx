@@ -67,8 +67,8 @@ export default function Illust() {
               rough
             </div>
           ) : null}
-          {data.tag.map((x) => (
-            <div className="badge badge-outline badge-md" key={x.key}>
+          {data.tag.forEach(x => (
+            <div className="badge badge-outline badge-md">
               {x}
             </div>
           ))}

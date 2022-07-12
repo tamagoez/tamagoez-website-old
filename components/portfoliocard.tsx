@@ -32,8 +32,8 @@ export default function Portfoliocard({
                   rough
                 </div>
               ) : null}
-              {tag.map((x) => (
-                <div className="badge badge-outline badge-sm" key={x.key}>
+              {tag.forEach(x => (
+                <div className="badge badge-outline badge-sm">
                   {x}
                 </div>
               ))}
