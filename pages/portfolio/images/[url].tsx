@@ -113,7 +113,7 @@ export default function Illust() {
             alt={data.title}
             width={data.width}
             height={data.height}
-            quality={100}
+            quality={90}
           />
         </div>
       </div>
