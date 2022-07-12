@@ -17,8 +17,9 @@ export default function illust() {
       </p>
       <div className="divider">2022年7月</div>
       <div className="flex flex-wrap justify-center gap-4">
-        {sortlist.forEach(x => (
+        {sortlist.map((x) => (
           <Portfoliocard
+            key={x.url}
             type="images"
             url={x.url}
             title={x.title}
