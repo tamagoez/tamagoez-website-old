@@ -38,5 +38,15 @@
     "height": 1536,
     "rough": true,
     "tag": ["analog", "heart"]
+  },
+  {
+    "url": "depressionfeeling.png",
+    "title": "鬱心",
+    "description": "鬱ってダークっていうよりかグレーなダーク。うーん、なんかMARETUさん感あるけどいっか!",
+    "date": "2022/07/13",
+    "width": 1920,
+    "height": 1080,
+    "rough": false,
+    "tag": ["digital", "鬱(depression)", "heart"]
   }
 ]
