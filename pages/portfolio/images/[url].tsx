@@ -75,12 +75,12 @@ export default function Illust() {
       <meta property="og:description" content={data.description} />
       <meta property="og:url" content={location.href} />
       <meta property="og:site_name" content="tamagoez Website" />
-      <meta property="og:image" content={`/images/${data.url}`} />
+      <meta property="og:image" content={`${location.hostname}/images/${data.url}`} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@_tamagoez_" />
       <meta name="twitter:title" content={data.title + " - tamagoez"} />
       <meta name="twitter:description" content={data.description} />
-      <meta name="twitter:image" content={`/images/${data.url}`} />
+      <meta name="twitter:image" content={`${location.hostname}/images/${data.url}`} />
     </Head>
       <div className="bg-base-200/20 min-h-screen">
         <div className="pt-2" />
