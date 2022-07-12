@@ -27,6 +27,11 @@ export default function Footer() {
               <FaTwitter />
             </a>
           </Link>
+          <Link href="https://twitter.com/_tamagoez_sub_" passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              <FaTwitter />
+            </a>
+          </Link>
         </div>
       </footer>
     </>
