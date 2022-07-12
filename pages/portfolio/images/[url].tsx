@@ -53,13 +53,13 @@ export default function Illust() {
     if (event.key === "ArrowLeft") {
       console.log("pressed: ArrowLeft");
       if (!keydown) router.push(prevlink);
-      keydown = false
+      keydown = true
     }
     return null;
   });
 
   document.body.addEventListener("keyup", (event) => {
-      keydown = false
+    keydown = false
     return null;
   });
 

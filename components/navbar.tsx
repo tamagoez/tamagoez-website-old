@@ -18,8 +18,9 @@ export default function Navbar() {
                   <Image
                     src="/images/zeogamat8.png"
                     alt="tamagoez"
-                    width={30}
-                    height={30}
+                    width={50}
+                    height={50}
+                    quality={50}
                   />
                 </div>
               </div>
