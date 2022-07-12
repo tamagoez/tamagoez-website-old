@@ -4,6 +4,7 @@ import illustlist from "../../../files/imagelist.json";
 import Title from "../../../components/title";
 import { IoClose } from "react-icons/io5";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Head from "next/head";
 
 export default function Illust() {
   const router = useRouter();
@@ -48,12 +49,14 @@ export default function Illust() {
       console.info(`keydown: ${sessionStorage.getItem('keydown')}`);
       if (sessionStorage.getItem('keydown') !== "false") router.push(nextlink);
       sessionStorage.setItem('keydown', 'true');
+      return null;
     }
     if (event.key === "ArrowLeft") {
       console.log("pressed: ArrowLeft");
       console.info(`keydown: ${sessionStorage.getItem('keydown')}`);
       if (sessionStorage.getItem('keydown') !== "false") router.push(prevlink);
       sessionStorage.setItem('keydown', 'true');
+      return null;
     }
     return null;
   });
@@ -65,6 +68,20 @@ export default function Illust() {
 
   return (
     <>
+    <Head>
+      {/*https://unique1.co.jp/column/sns_operation/3033/*/}
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content={data.title + " - tamagoez"} />
+      <meta property="og:description" content={data.description} />
+      <meta property="og:url" content={location.href} />
+      <meta property="og:site_name" content="tamagoez Website" />
+      <meta property="og:image" content={`/images/${data.url}`} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@_tamagoez_" />
+      <meta name="twitter:title" content={data.title + " - tamagoez"} />
+      <meta name="twitter:description" content={data.description} />
+      <meta name="twitter:image" content={`/images/${data.url}`} />
+    </Head>
       <div className="bg-base-200/20 min-h-screen">
         <div className="pt-2" />
         <p className="text-gray-900">

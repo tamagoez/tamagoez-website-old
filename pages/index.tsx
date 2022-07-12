@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       <div className="divider">Menu</div>
-      <div className="min-h-[82vh]">
+      <div className="min-h-[80vh]">
         <div className="flex flex-wrap gap-4 px-3 justify-center">
           <Link href="/portfolio" passHref>
             <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.98]">
