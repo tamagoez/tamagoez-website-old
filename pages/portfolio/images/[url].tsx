@@ -42,7 +42,7 @@ export default function Illust() {
   console.log(`prev: ${prevlink}`);
   console.log(`next: ${nextlink}`);
 
-  document.body.addEventListener("keypress", (event) => {
+  document.body.addEventListener("keydown", (event) => {
     if (event.key === "ArrowRight") {
       console.log("pressed: ArrowRight");
       router.push(nextlink);
@@ -67,11 +67,11 @@ export default function Illust() {
               rough
             </div>
           ) : null}
-          {data.tag.forEach(x => (
-            <div className="badge badge-outline badge-md">
-              {x}{console.log(x)}
-            </div>
-          ))}
+          {data.tag.forEach((x) => { 
+                <div className="badge badge-outline badge-sm">
+                  {x}
+                </div>
+          })}
         </div>
         <span className="text-sm text-gray-500 flex justify-center">
           {data.date}
@@ -113,7 +113,8 @@ export default function Illust() {
             alt={data.title}
             width={data.width}
             height={data.height}
-            quality={85}
+            quality={100}
+            placeholder="blur"
           />
         </div>
       </div>
