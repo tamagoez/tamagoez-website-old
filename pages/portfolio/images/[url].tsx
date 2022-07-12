@@ -45,13 +45,13 @@ export default function Illust() {
   document.body.addEventListener("keydown", (event) => {
     if (event.key === "ArrowRight") {
       console.log("pressed: ArrowRight");
-      console.info(`keydown: ${keydown}`);
+      console.info(`keydown: ${sessionStorage.getItem('keydown')}`);
       if (sessionStorage.getItem('keydown') !== "false") router.push(nextlink);
       sessionStorage.setItem('keydown', 'true');
     }
     if (event.key === "ArrowLeft") {
       console.log("pressed: ArrowLeft");
-      console.info(`keydown: ${keydown}`);
+      console.info(`keydown: ${sessionStorage.getItem('keydown')}`);
       if (sessionStorage.getItem('keydown') !== "false") router.push(prevlink);
       sessionStorage.setItem('keydown', 'true');
     }
