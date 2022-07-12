@@ -33,7 +33,10 @@ export default function Portfoliocard({
                 </div>
               ) : null}
               {tag.map((x) => (
-                <div className="badge badge-outline badge-sm">{x}</div>
+                <div className="badge badge-outline badge-sm">
+                  {x.key}
+                  {x}
+                </div>
               ))}
             </div>
             <p>{description}</p>

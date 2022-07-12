@@ -68,7 +68,10 @@ export default function Illust() {
             </div>
           ) : null}
           {data.tag.map((x) => (
-            <div className="badge badge-outline badge-md">{x}</div>
+            <div className="badge badge-outline badge-md">
+              {x.key}
+              {x}
+            </div>
           ))}
         </div>
         <span className="text-sm text-gray-500 flex justify-center">

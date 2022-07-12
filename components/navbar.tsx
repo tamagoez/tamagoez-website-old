@@ -16,7 +16,7 @@ export default function Navbar() {
               <div className="avatar">
                 <div className="rounded-full">
                   <Image
-                    src="/illust/zeogamat8.png"
+                    src="/images/zeogamat8.png"
                     alt="tamagoez"
                     width={30}
                     height={30}
