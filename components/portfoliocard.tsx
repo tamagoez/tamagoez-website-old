@@ -21,6 +21,7 @@ export default function Portfoliocard({
               alt={title}
               width={width}
               height={height}
+              quality={70}
             />
           </figure>
           <div className="card-body">
@@ -32,7 +33,7 @@ export default function Portfoliocard({
                   rough
                 </div>
               ) : null}
-              {tag.forEach(x => (
+              {tag.forEach((x) => (
                 <div className="badge badge-outline badge-sm">
                   {x}
                 </div>
