@@ -42,15 +42,24 @@ export default function Illust() {
   console.log(`prev: ${prevlink}`);
   console.log(`next: ${nextlink}`);
 
+  let keydown = false
+
   document.body.addEventListener("keydown", (event) => {
     if (event.key === "ArrowRight") {
       console.log("pressed: ArrowRight");
-      router.push(nextlink);
+      if (!keydown) router.push(nextlink);
+      keydown = true
     }
     if (event.key === "ArrowLeft") {
       console.log("pressed: ArrowLeft");
-      router.push(prevlink);
+      if (!keydown) router.push(prevlink);
+      keydown = false
     }
+    return null;
+  });
+
+  document.body.addEventListener("keyup", (event) => {
+      keydown = false
     return null;
   });
 
@@ -67,8 +76,8 @@ export default function Illust() {
               rough
             </div>
           ) : null}
-          {data.tag.forEach((x) => { 
-                <div className="badge badge-outline badge-sm">
+          {data.tag.map((x) => { 
+                <div className="badge badge-outline badge-sm" key={x}>
                   {x}
                 </div>
           })}
