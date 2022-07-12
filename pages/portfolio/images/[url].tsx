@@ -69,7 +69,7 @@ export default function Illust() {
           ) : null}
           {data.tag.forEach(x => (
             <div className="badge badge-outline badge-md">
-              {x}
+              {x}{console.log(x)}
             </div>
           ))}
         </div>
@@ -113,6 +113,7 @@ export default function Illust() {
             alt={data.title}
             width={data.width}
             height={data.height}
+            quality={100}
           />
         </div>
       </div>
