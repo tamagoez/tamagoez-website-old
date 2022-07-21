@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 export default function Title({ title }) {
   if (process.browser) {
     document.title = `${title} - tamagoez(KaneranP)`;
