@@ -75,10 +75,10 @@ export default function Navbar() {
               </ul>
             </li>
             <li>
-              <Link href="/blog" passHref>
+              <Link href="/article" passHref>
                 <a>
                   <TbNotebook />
-                  Blog
+                  Article
                 </a>
               </Link>
             </li>

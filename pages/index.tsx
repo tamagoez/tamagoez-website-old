@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>tamagoez Website</title>
+        <title>tamagoez(KaneRanP) Website</title>
         <meta name="description" content="An official website for tamagoez" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -18,7 +18,7 @@ export default function Home() {
             <div className="max-w-md">
               <h1 className="mb-5 text-5xl font-bold">tamagoez Website</h1>
               <p className="mb-5">
-                Portfolio(application, illust, movies), blog, contact
+                Portfolio(application, illust, movies), article, contact
               </p>
               <button className="btn glass">Take a look</button>
             </div>
@@ -40,11 +40,11 @@ export default function Home() {
               </div>
             </div>
           </Link>
-          <Link href="/blog" passHref>
+          <Link href="/article" passHref>
             <div className="card w-96 bg-base-100 shadow-lg hover:shadow-md hover:brightness-[.98]">
               <div className="card-body">
-                <h2 className="card-title">Blog</h2>
-                <p>Look inside of tamagoez</p>
+                <h2 className="card-title">Article</h2>
+                <p>Article</p>
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary">Go</button>
                 </div>
