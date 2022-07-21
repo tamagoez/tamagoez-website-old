@@ -102,7 +102,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/blog" passHref>
+              <Link href="/article" passHref>
                 <a>
                   <TbNotebook />
                 </a>

@@ -4,7 +4,7 @@ export default function Blog() {
   const router = useRouter()
   return (
     <>
-      <Title title="Blog" />
+      <Title title="Article" />
       <div
           className="card w-96 bg-base-100 shadow-xl shadow-lg hover:shadow-md hover:brightness-[.98]"
           onClick={() => router.push("/article/youtube-or-niconico")}
