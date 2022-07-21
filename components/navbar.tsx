@@ -26,6 +26,7 @@ export default function Navbar() {
               </div>
               <div className="px-1" />
               tamagoez
+              <div className="badge badge-secondary badge-outline">BETA</div>
             </a>
           </Link>
         </div>
@@ -96,21 +97,21 @@ export default function Navbar() {
           <ul className="menu menu-horizontal p-0">
             <li>
               <Link href="/portfolio" passHref>
-                <a>
+                <a className="text-lg">
                   <RiFileCopy2Line />
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/article" passHref>
-                <a>
+                <a className="text-lg">
                   <TbNotebook />
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/about-etc" passHref>
-                <a>
+                <a className="text-lg">
                   <IoPerson />
                 </a>
               </Link>
