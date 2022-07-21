@@ -26,7 +26,7 @@ export default function Navbar() {
               </div>
               <div className="px-1" />
               tamagoez
-              <div className="badge badge-secondary badge-outline">BETA</div>
+              <div className="pl-2 badge badge-secondary badge-outline">BETA</div>
             </a>
           </Link>
         </div>
